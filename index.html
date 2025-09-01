@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tic Tac Toe</title>
+    <link
+      rel="shortcut icon"
+      href="./images/tic-tac-toe-.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <article class="card main-card">
+        <h1 class="title main-title"></h1>
+        <main class="game-board">
+          <button class="cell" type="button"></button>
+          <button class="cell" type="button"></button>
+          <button class="cell" type="button"></button>
+          <button class="cell" type="button"></button>
+          <button class="cell" type="button"></button>
+          <button class="cell" type="button"></button>
+          <button class="cell" type="button"></button>
+          <button class="cell" type="button"></button>
+          <button class="cell" type="button"></button>
+        </main>
+        <div class="game__control">
+          <button class="button reset" type="reset">Reset</button>
+          <button class="button change" type="button">Change difficulty</button>
+        </div>
+      </article>
+      <form class="difficulty card disappear">
+        <label for="level" class="title difficulty__title"
+          >Game Difficulty</label
+        >
+        <select
+          name="level"
+          id="level"
+          class="button difficulty__options"
+          required
+        >
+          <option class="difficulty__option" value="" disabled selected>
+            Pick your grid size
+          </option>
+          <option class="difficulty__option" value="3">3 [ Easy ]</option>
+          <option class="difficulty__option" value="4">4 [ Medium ]</option>
+          <option class="difficulty__option" value="5">5 [ Hard ]</option>
+          <option class="difficulty__option" value="6">6 [ Advanced ]</option>
+        </select>
+        <button
+          type="submit"
+          aria-label="Start Game"
+          class="difficulty__submit"
+        >
+          <img class="difficulty__submit-img" src="./images/game.png" alt="" />
+        </button>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./accessibility.js"></script>
+  </body>
+</html>
