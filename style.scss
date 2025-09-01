@@ -57,7 +57,9 @@ button {
 
 // General:
 html {
-  font-size: 62.5%;
+  @media (max-width: 800px) {
+    font-size: 62.5%;
+  }
 }
 
 body {
@@ -249,3 +251,4 @@ body {
   color: var(--cell-shadow-hover-bg);
   text-transform: uppercase;
 }
+
