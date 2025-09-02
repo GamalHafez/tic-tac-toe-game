@@ -33,7 +33,7 @@ button {
 
   --font-size-30: 3rem;
   --font-size-28: 2.8rem;
-  --font-size-26: 2.6rem;
+  --font-size-20: 2rem;
   --font-size-14: 1.4rem;
   --weight-semibold: 600;
 
@@ -176,7 +176,8 @@ body {
   font-size: var(--font-size-30);
 
   @media (max-width: 550px) {
-    font-size: var(--font-size-26);
+    width: min(6.5rem);
+    font-size: var(--font-size-20);
   }
 
   &.player1-color {
@@ -256,5 +257,6 @@ body {
   color: var(--cell-shadow-hover-bg);
   text-transform: uppercase;
 }
+
 
 
